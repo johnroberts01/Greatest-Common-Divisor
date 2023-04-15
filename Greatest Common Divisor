@@ -1,0 +1,9 @@
+def gcd(a, b):
+    if a == 0:
+        return b
+    return gcd(b % a, a)
+
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("GCD of", num1, "and", num2, "is", gcd(num1, num2))
